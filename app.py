@@ -85,6 +85,12 @@ if st.button("Search for Hidden Gems"):
                                 google_maps_url = f"https://www.google.com/maps/search/{name.replace(' ', '+')}+{location.replace(' ', '+')}"
                                 st.link_button("📍 View on Maps", google_maps_url)
                 
+                # --- MONETIZATION BLOCK ---
+                st.divider()
+                st.subheader("🚀 Travel Like a Pro")
+                st.write("Want to master independent rentals anywhere in the world? Grab my **Global Local's Car Rental Playbook** for insider tips and a framework to avoid the 'tourist' markups.")
+                st.link_button("Get the Playbook ($7)", "https://jobreadyhq.gumroad.com/l/vuyfve")
+                
                 if not found_any_gems:
                     st.info("We found rentals, but none met our strict 'Independent Rental' criteria. Try a nearby city!")
             else:
